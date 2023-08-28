@@ -1,0 +1,5 @@
+Leer datos desde archivos de
+entrada y procesarlos: Puedes abrir y leer archivos de 
+entrada para obtener informacion que luego puedes utilizar en tu programa.
+This text has to be appended at the end
+hola hola hola desde un archivo

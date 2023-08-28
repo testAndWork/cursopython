@@ -21,3 +21,12 @@ while True:
     elif operacion == 0:
         print('Gracias por usar la calculadora')
         break
+
+
+
+num_estudiantes = int(input("Ingrese el número de estudiantes: "))
+datos_estudiantes = {}
+
+for it in range(1,totalEstudiantes + 1 ):
+    nombre:
+    edad:

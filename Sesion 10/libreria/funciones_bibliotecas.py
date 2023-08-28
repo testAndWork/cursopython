@@ -49,7 +49,22 @@ def eliminar_libro(tituloLibro):
                 f"Título: {it['Titulo'] }, Autor: {it['Autor']}, Fecha de Publicacion {it['Fecha']}")
             eliminar = True
             break
-        libro.remove(tituloLibro)
+        libro.remove(it)
 
     if not eliminar:
         print('No existe el libro')
+
+
+def Eliminar_Libro(tituloLibro):
+    encontrado = False
+    for it in libro:
+        if tituloLibro.lower() in it['Titulo'].lower():
+            print(f"Eliminando libro:")
+            print(
+                f"Titulo: {it['Titulo']}, Autor: {it['Autor']}, fecha_de_publicacion: {it['Fecha']}")
+            libro.remove(it)
+            encontrado = True
+            break
+          
+    if not encontrado:
+        print('Libro no encontrado')
