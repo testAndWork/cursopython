@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title> Video in HTML</title>
+</head>
+<section><h2 style="color: brown;">El elemento Video en HTML </h2></section>
+<body>
+    <section><h3>Video en tu etiqueta </h3></section>
+<video src="/multimedia/mario.mp4" width="300" height="450">Este es un video en entorno video.</video>
+
+<section><h3>Video con Controls</h3></section>
+    <video width="300" height="450" controls>
+        <source src="/multimedia/mario.mp4" type="video/mp4">
+    </video>
+    <section><h3>Video con autoplay</h3></section>
+    <video width="300" height="450" autoplay>
+        <source src="/multimedia/mario.mp4" type="video/mp4">
+    </video>
+
+    <section><h3>Video con autoplay muted</h3></section>
+    <video width="300" height="450" autoplay muted>
+        <source src="/multimedia/mario.mp4" type="video/mp4">
+        Tu buscador no soporta estos videos.
+    </video>
+
+    <section><h3>Video con control loop</h3></section>
+    <video width="300" height="450" controls loop>
+        <source src="/multimedia/mario.mp4" type="video/mp4">
+    </video>
+
+    <section><h3>Video con imagen previa </h3></section>
+    <video width="300" height="450" controls poster="/multimedia/totorowool.jpg">
+        <source src="/multimedia/mario.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
