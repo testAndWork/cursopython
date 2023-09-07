@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> Etiqueta Input  </title>
+</head>
+    <body>
+        <section style="color: brown;"><h2>Etiquetas < input > y sus variantes </h2></section>
+    <form>
+
+        <p><h4>Tipo "text"</h4> </p>
+        <ul>
+            <li>Crea el campo de texto en una línea</li>
+            <li>Acepta cualquier tipo de texto alfanumérico.</li>
+        </ul>
+        <label for="username">Username</label>
+        <input type="text" name = "username">
+
+
+        <p><h4>Tipo "password"</h4> </p>
+        <ul>
+            <li>Como el campo de textos, pero los caracteres se ocultan</li>
+        </ul>
+        <label for="password">Password</label>
+        <input type="password" name = "password">
+
+
+        <p><h4>Tipo "email"</h4> </p>
+        <ul>
+            <li>Acepta y valida una dirección de correo.</li>
+        </ul>
+        <label for="email">Email</label>
+        <input type="email" name = "email">
+        <input type="submit" value="Enviar">
+
+        <p><h4>Tipo "number"</h4> </p>
+        <ul>
+            <li>Solo acepta numeros y puede incluir atributos como min, max, step.</li>
+        </ul>
+        <label for="number">Number</label>
+        <input type="number" name = "number" min="1" max="30" step="1">
+        <input type="number" name = "number" min="1" max="12" step="1">
+        <input type="number" name = "number" min="1999" max="2050" step="1">
+        <input type="submit" value="Enviar">
+
+        <p><h4>Tipo "date"</h4> </p>
+        <ul>
+            <li>Proporciona un selector de fecha.</li>
+        </ul>
+        <label for="date">Date</label>
+        <input type="date" name = "date">
+        <input type="submit" value="Enviar">
+
+
+        <p><h4>Tipo "checkbox"</h4> </p>
+        <ul>
+            <li>Crea una casilla de verificación que permite al usuario seleccionar una o varias opciones.</li>
+        </ul>
+        <label for="checkbox">Deportes</label>
+        <input type="checkbox" name = "interest" value="Deportes">
+        <label for="checkbox">Música</label>
+        <input type="checkbox" name = "interest" value="Music">
+
+
+        <p><h4>Tipo "radio"</h4> </p>
+        <ul>
+            <li>Crea una casilla de verificación que permite al usuario seleccionar una opción.</li>
+        </ul>
+        <label for="radio">Deportes</label>
+        <input type="radio" name = "interest" value="Deportes">
+        <label for="radio" >Música</label>
+        <input type="radio" name = "interest" value="Music">        
+        <label for="radio">Viajes</label>
+        <input type="radio" name = "interest" value="Viajes">
+        <label for="radio" >Lectura</label>
+        <input type="radio" name = "interest" value="Music">        
+
+        <p><h4>Tipo "file"</h4> </p>
+        <ul>
+            <li>Permite cargar un archivo.</li>
+        </ul>
+        <label for="submit">Cargar archivo</label>
+        <input type="file" value="archivo">
+
+        <p><h4>Tipo "submit"</h4> </p>
+        <ul>
+            <li>Permite enviar un formulario.</li>
+        </ul>
+        <label for="submit">Cargar archivo</label>
+        <input type="submit" value="enviar">
+
+        <p><h4>Tipo "reset"</h4> </p>
+        <ul>
+            <li>Boton de reinicio que restaura los valores a los valores predeterminados.</li>
+        </ul>
+        <label for="reset">Reestablecer</label>
+        <input type="reset" value="reset">
+
+        <p><h4>Tipo "hidden"</h4> </p>
+        <ul>
+            <li>Crea un campo oculto que no es visible para el usuario , pero si puede almacenar los datos.</li>
+        </ul>
+        <label for="hidden">hidden Buttom </label>
+        <input type="hidden" value="hidden">
+
+    </form>
+    <pre>
+
+
+
+
+
+
+
+    </pre>
+    <footer>Derechos reservados.</footer>
+    </body>
+</html>
