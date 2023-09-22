@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelect</title>
+</head>
+<body>
+    <p class="parrafo">Este es el primer parrafo</p>
+    <p class="parrafo">Este es el segundo parrafo</p>
+
+    <script>
+       const parrafo = document.querySelectorAll("p")
+       parrafo.forEach(function(p){
+        p.style.textDecoration = "underline"
+        p.style.color = "brown"
+       })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: aliceblue;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(73, 110, 8)
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}

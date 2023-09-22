@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body><h1 id = "titulo">getElementbyId</h1>
+<p id="parrafo"> Esta es una prueba de modicacion de color en un parrafo</p>
+
+<p id="llamdo"> otro color</p>
+
+<script>
+    const parrafo = document.getElementById("parrafo")
+    parrafo.style.color = "red"
+    const llamado = document.getElementById("llamdo")
+    llamado.style.backgroundColor = "blue"
+
+    const titulo = document.getElementById("titulo")
+    titulo.style.color = "purple"
+</script>
+</body>
+</html>

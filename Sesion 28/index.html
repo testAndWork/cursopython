@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .rojo{
+            color: red;
+        }
+        .azul{
+            color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+<h1 >getElementbyClassName</h1>
+
+<p class = "rojo"> Esta es una prueba de modicacion de color en un parrafo</p>
+<p class = "azul">  clases en HTMLr</p>
+
+<p class = "rojo"> otro color po aca</p>
+<p class = "azul"> otro color</p>
+
+<script>
+    const element = document.getElementsByClassName("rojo")
+    for(let i =0; i< element.length; i++ ){
+        element[i].style.fontWeight = "bold"
+    }
+
+    const elemento = document.getElementsByClassName("azul")
+    for(let i =0; i< elemento.length; i++ ){
+        elemento[i].style.backgroundColor = "green"
+        elemento[i].style.margin = '30px'
+
+    }
+
+</script>
+</body>
+</html>
