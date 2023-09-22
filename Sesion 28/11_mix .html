@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de Modificación de Elemento</title>
+</head>
+<body>
+  <h1 id="miTitulo">Hola, Mundo!</h1>
+
+
+  <div id="contenedor"></div>
+
+  <button id="boton">Haz clic</button>
+
+
+  <div id="contenedor">
+    <h2>Título</h2>
+    <p>Párrafo de ejemplo</p>
+  </div>
+
+  <script>
+    /*
+    Ejemplo 1: Acceder a un elemento y modificarlo
+    En este ejemplo, usaremos la clase HTMLElement para acceder a un elemento HTML y modificar su contenido.
+*/
+    // Accedemos al elemento por su ID utilizando document.getElementById
+    const titulo = document.getElementById('miTitulo');
+
+    // Modificamos el contenido del elemento
+    titulo.textContent = '¡Hola!!!! mundoooo!'; // Cambiamos el texto
+
+    // También podemos cambiar los estilos
+    titulo.style.color = 'blue'; // Cambiamos el color del texto
+/*Ejemplo 2: Crear un nuevo elemento y agregarlo al DOM
+
+Este ejemplo muestra cómo crear un nuevo elemento y agregarlo al DOM utilizando la clase HTMLElement.*/ 
+
+ // Creamos un nuevo elemento div
+ const nuevoDiv = document.createElement('div');
+    
+ // Modificamos su contenido
+ nuevoDiv.textContent = 'Este es un nuevo div';
+
+ // Agregamos el nuevo elemento al DOM como hijo del div con el ID "contenedor"
+ const contenedor = document.getElementById('contenedor');
+ contenedor.appendChild(nuevoDiv);
+
+
+/*Ejemplo 3: Manejo de Eventos
+
+Este ejemplo demuestra cómo utilizar la clase EventTarget para manejar eventos.*/ 
+const boton = document.getElementById('boton');
+
+    // Agregamos un manejador de eventos al botón
+    boton.addEventListener('click', () => {
+      alert('¡Hiciste clic en el botón!');
+    });
+/* Ejemplo 4: Acceder a Elementos Anidados
+
+Este ejemplo muestra cómo acceder a elementos anidados utilizando clases y la propiedad childNodes.*/ 
+
+const contenedores = document.getElementById('contenedor');
+
+// Accedemos al primer hijo del div
+const primerHijo = contenedores.childNodes[1];
+
+// Modificamos el contenido del primer hijo
+primerHijo.textContent = 'Nuevo Título';
+
+// También podemos acceder al segundo hijo (párrafo)
+const segundoHijo = contenedores.childNodes[3];
+segundoHijo.textContent = 'Nuevo Párrafo';
+
+
+
+  </script>
+</body>
+</html>

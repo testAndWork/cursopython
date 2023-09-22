@@ -3,6 +3,7 @@ const tabla = document.getElementById('tabla');
 const botonAgregar = document.getElementById('agregar');
 
 botonAgregar.addEventListener('click', () => {
+
   // Obtener los valores ingresados por el usuario
   const id = document.getElementById('id').value;
   const producto = document.getElementById('producto').value;
@@ -27,6 +28,11 @@ botonAgregar.addEventListener('click', () => {
   celdaCosto.innerHTML = costo;
   celdaCantidad.innerHTML = cantidad; // Mostrar la cantidad
 
+  //limpiar los compos del formulario
+  document.getElementById('id').value = '' ;
+  document.getElementById('producto').value  = '' ;
+  document.getElementById('descripcion').value  = '' ;
+  document.getElementById('costo').value  = '' ;
+  document.getElementById('cantidad').value  = '' ;
 
-  
 });

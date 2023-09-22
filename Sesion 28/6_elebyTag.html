@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de getElementsByTagName</title>
+</head>
+<body>
+    <pre>
+        getElementsByTagName - Utilizado para seleccionar elementos por su nombre de etiqueta HTML.
+    </pre>
+    <ul>
+        <li>Manzana</li>
+        <li>Plátano</li>
+        <li>Uva</li>
+    </ul>
+
+    <div><h1>Este es un texto</h1></div>
+    <script>
+        // Seleccionar elementos por su etiqueta
+        const elementos = document.getElementsByTagName("li");
+        for (let i = 0; i < elementos.length; i++) {
+            elementos[i].style.color = "green"; // Cambiar el color del texto
+        }
+
+        const elemento = document.getElementsByTagName("div");
+        for (let i = 0; i < elemento.length; i++) {
+            elemento[i].style.color = "purple"; // Cambiar el color del texto
+        }
+    </script>
+</body>
+</html>

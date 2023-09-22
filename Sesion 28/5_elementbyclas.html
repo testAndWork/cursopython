@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de getElementsByClassName</title>
+    <style>
+        .rojo {
+            color: red;
+        }
+
+        .blue{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <p class="rojo">Este es un párrafo con una clase específica.</p>
+    <p class="rojo">Este también tiene la clase "rojo".</p>
+    <p class="rojo"> la clase "rojo".</p>
+
+    <p class="blue">Este es un párrafo con una clase específica.</p>
+    <p class="blue">Este también tiene la clase "rojo".</p>
+    <p class="blue"> la clase "rojo".</p>
+
+
+
+    <script>
+        // Seleccionar elementos por su clase
+        const elementos = document.getElementsByClassName("rojo");
+        for (let i = 0; i < elementos.length; i++) {
+            elementos[i].style.fontWeight = "bold"; // Hacer el texto en negrita
+        }
+
+        const elementosBlue = document.getElementsByClassName("blue");
+        for (let i = 0; i < elementosBlue.length; i++) {
+            elementos[i].style.fontWeight = "bold"; // Hacer el texto en negrita
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Productos</title>
+  <style>
+    /* Estilos para la tabla */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #e0f2e9; /* Fondo verde claro */
+      border: 2px solid #4CAF50; /* Bordes verdes */
+    }
+
+    /* Estilos para las celdas del encabezado (th) */
+    th {
+      background-color: #4CAF50; /* Fondo verde */
+      color: white; /* Texto blanco */
+      border: 2px solid #4CAF50; /* Bordes verdes */
+      padding: 8px; /* Espaciado interno */
+      text-align: left; /* Alineación del texto a la izquierda */
+    }
+
+    /* Estilos para las celdas de datos (td) */
+    td {
+      border: 2px solid #4CAF50; /* Bordes verdes */
+      padding: 8px; /* Espaciado interno */
+      text-align: left; /* Alineación del texto a la izquierda */
+    }
+  </style>
+</head>
+<body>
+  <h2>Registro de Productos</h2>
+  
+  <!-- Formulario para ingresar información del producto -->
+  <form id="formulario">
+    <label for="id">ID:</label>
+    <input type="text" id="id" required><br>
+    
+    <label for="producto">Producto:</label>
+    <input type="text" id="producto" required><br>
+    
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" required><br>
+    
+    <label for="costo">Costo Unitario:</label>
+    <input type="number" id="costo" required><br>
+    
+    <!-- Nuevo campo para la cantidad -->
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" required><br>
+    
+    <button type="button" id="agregar">Agregar Producto</button>
+  </form>
+  
+  <!-- Tabla para mostrar los productos -->
+  <table id="tabla">
+    <tr>
+      <th>ID</th>
+      <th>Producto</th>
+      <th>Descripción</th>
+      <th>Costo Unitario</th>
+      <!-- Nueva columna para la cantidad -->
+      <th>Cantidad</th>
+    </tr>
+  </table>
+
+  <script>
+    const formulario = document.getElementById('formulario');
+    const tabla = document.getElementById('tabla');
+    const botonAgregar = document.getElementById('agregar');
+
+    botonAgregar.addEventListener('click', () => {
+      // Obtener los valores ingresados por el usuario
+      const id = document.getElementById('id').value;
+      const producto = document.getElementById('producto').value;
+      const descripcion = document.getElementById('descripcion').value;
+      const costo = document.getElementById('costo').value;
+      const cantidad = document.getElementById('cantidad').value; // Nuevo campo
+
+      // Crear una nueva fila en la tabla
+      const nuevaFila = tabla.insertRow(-1);
+
+      // Insertar celdas en la nueva fila
+      const celdaId = nuevaFila.insertCell(0);
+      const celdaProducto = nuevaFila.insertCell(1);
+      const celdaDescripcion = nuevaFila.insertCell(2);
+      const celdaCosto = nuevaFila.insertCell(3);
+      const celdaCantidad = nuevaFila.insertCell(4); // Nueva celda
+
+      // Agregar los valores a las celdas
+      celdaId.innerHTML = id;
+      celdaProducto.innerHTML = producto;
+      celdaDescripcion.innerHTML = descripcion;
+      celdaCosto.innerHTML = costo;
+      celdaCantidad.innerHTML = cantidad; // Mostrar la cantidad
+
+      // Limpiar los campos del formulario
+      document.getElementById('id').value = '';
+      document.getElementById('producto').value = '';
+      document.getElementById('descripcion').value = '';
+      document.getElementById('costo').value = '';
+      document.getElementById('cantidad').value = ''; // Limpiar el campo de cantidad
+    });
+  </script>
+</body>
+</html>

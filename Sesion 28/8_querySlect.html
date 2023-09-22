@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de querySelectorAll</title>
+</head>
+<body>
+    <ul>
+        <li>Manzana</li>
+        <li>Plátano</li>
+        <li>Uva</li>
+    </ul>
+
+    <script>
+        // Seleccionar todos los elementos <li>
+        const elementosLi = document.querySelectorAll("li");
+        elementosLi.forEach(function(li) {
+            li.style.textDecoration = "underline"; // Subrayar los elementos de la lista
+        });
+    </script>
+</body>
+</html>

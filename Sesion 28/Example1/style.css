@@ -6,6 +6,12 @@ table {
     border: 2px solid black;
 }
 
+td {
+    background-color:rgb(226, 214, 214) ;
+    color: #000;
+    text-align: center;
+}
+
 h1{
     color: brown;
     text-align: center;
